@@ -19,8 +19,6 @@ function inicioDeSesion(){
     }
 }
 
-inicioDeSesion();
-
 function calculadoraDeSueldos(){
     let nombre = prompt("ingrese el nombre del trabajador");
     let apellido = prompt("ingrese el apellido del trabajador");
@@ -51,5 +49,8 @@ function calculadoraDeSueldos(){
     }
     return historial.push(reciboDetalle);
 }
-//historial.push(calculadoraDeSueldos());
+
+inicioDeSesion();
 console.log(historial);
+
+
