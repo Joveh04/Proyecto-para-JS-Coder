@@ -10,7 +10,7 @@ function inicioDeSesion(){
     calculadoraDeSueldos();
     let repetir = prompt("desea repetir el calculo? si o no");
     if(repetir== "si"){
-    historial.push(calculadoraDeSueldos());
+    calculadoraDeSueldos();
     }else{
     alert("gracias por utilizar la app en seccion historial se encuentra el detalle del calculo");
     }
