@@ -50,7 +50,40 @@ function calculadoraDeSueldos(){
     return historial.push(reciboDetalle);
 }
 
+
 inicioDeSesion();
-console.log(historial);
+console.log(historial[0]);
+/*let contenedor = document.createElement("div");
+contenedor.innerHTML = `<h2>Nombre:${" "+historial[0].nombre+ " "+historial[0].apellido}</h2>
+<h4>Sueldo Nominal: ${historial[0].sueldoNominal}</h4>
+<h4>Descuentos: ${historial[0].descuentos}</h4>
+<h4>Sueldo a cobrar: ${historial[0].sueldoACobrar}</h4>`
+
+document.body.appendChild(contenedor);
+//console.log(historial);*/
 
 
+
+for(objeto in historial){
+    let contenedor = document.createElement("div");
+contenedor.innerHTML = `<h2>Nombre:${" "+historial[objeto].nombre+ " "+historial[objeto].apellido}</h2>
+<h4>Sueldo Nominal: $${historial[objeto].sueldoNominal}</h4>
+<h4>Descuentos: $${historial[objeto].descuentos}</h4>
+<h4>Sueldo a cobrar: $${historial[objeto].sueldoACobrar}</h4>`
+
+document.body.appendChild(contenedor);
+
+    
+}
+
+/*for(objeto of historial){
+    let contenedor = document.createElement("div");
+contenedor.innerHTML = `<h2>Nombre:${" "+objeto.nombre+ " "+objeto.apellido}</h2>
+<h4>Sueldo Nominal: ${objeto.sueldoNominal}</h4>
+<h4>Descuentos: ${objeto.descuentos}</h4>
+<h4>Sueldo a cobrar: ${objeto.sueldoACobrar}</h4>`
+
+document.body.appendChild(contenedor);
+
+    
+}*/
